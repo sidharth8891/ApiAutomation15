@@ -152,21 +152,21 @@ public class apiTestScript extends BaseTest {
 //	 
 //	}
 //	
-//	@Test(description="Validate the status code for GET users endpoint")
-//	public void validateResponseBodyGetOauth2Auth() {	
-//		
-//             Response resp = given()
-//	                		.auth()
-//	                		.oauth2(accessToken)
-//	                		.when()
-//	                		.get("https://reqres.in/api/users/2");
-//	
-//	int actualStatusCode = resp.statusCode();  //RestAssured
-//	assertEquals(actualStatusCode, 200); //Testng
-//	System.out.println(resp.body().asString());
-//	 
-//	}
-//	
+	@Test(description="Validate the status code for GET users endpoint")
+	public void validateResponseBodyGetOauth2Auth() {	
+		
+             Response resp = given()
+	                		.auth()
+	                		.oauth2(accessToken)
+	                		.when()
+	                		.get("https://reqres.in/api/users/2");
+	
+	int actualStatusCode = resp.statusCode();  //RestAssured
+	assertEquals(actualStatusCode, 200); //Testng
+	System.out.println(resp.body().asString());
+	 
+	}
+	
 	@Test(description="Validate the status code for GET users endpoint")
 	public void validateResponseBodyGetOauth2WithHeader() {	
 		
