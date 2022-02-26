@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" name="Failed suite [Automation Regression Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="api.com.util.RetryListener"/>
+  </listeners>
+  <test name="API TestCases(failed)">
+    <classes>
+      <class name="api.com.tests.apiTestScript">
+        <methods>
+          <include name="endReport"/>
+          <include name="config"/>
+          <include name="validateResponseBodyPojoPost"/>
+          <include name="getResult"/>
+          <include name="LogBeforeMethod"/>
+        </methods>
+      </class> <!-- api.com.tests.apiTestScript -->
+    </classes>
+  </test> <!-- API TestCases(failed) -->
+</suite> <!-- Failed suite [Automation Regression Suite] -->

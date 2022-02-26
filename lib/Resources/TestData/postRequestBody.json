@@ -1,0 +1,19 @@
+{
+
+    "name": "morpheus",
+    "jobs": ["tester","developer","support"],
+    "cityModels":[
+      {
+           "Name":"bangalore",
+           "Temperature":"30",
+           "Humidity":"20"
+      },
+      {
+   	       "Name":"delhi",
+           "Temperature":"40",
+           "Humidity":"25"
+       }
+
+]
+}
+

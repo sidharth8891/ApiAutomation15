@@ -1,0 +1,6 @@
+{
+"urigetuser":"https://reqres.in/api/users?page=2",
+"expectedSCTC001":200,
+"supportURL":"https://reqres.in/#support-heading",
+"city":[]
+}

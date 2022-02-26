@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="api.com.tests.apiTestScript">
+        <methods>
+          <include name="validateResponseBodyGetPathParam"/>
+          <include name="endReport"/>
+          <include name="validateResponseBodyGetBasicAuth"/>
+          <include name="validateResponseBodyGetDigestAuth"/>
+          <include name="validateResponseBodyGetUs"/>
+          <include name="LogBeforeMethod"/>
+          <include name="validateStatusCodeGetUsers"/>
+          <include name="validateStatusCodeGetUser"/>
+          <include name="validateResponseBodyGetOauth2Auth"/>
+          <include name="validateResponseBodyGetOauth2WithHeader"/>
+          <include name="config"/>
+          <include name="validateResponseBodyPojoPost"/>
+          <include name="getResult"/>
+          <include name="validateResponseBodyGetHeader"/>
+          <include name="validateResponseBodyPojoPostBody"/>
+          <include name="validateResponseBodyGetOauth1Auth"/>
+        </methods>
+      </class> <!-- api.com.tests.apiTestScript -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="0" failed="1" skipped="5">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-02-13T14:31:48Z" name="Automation Regression Suite" finished-at="2022-02-13T14:32:25Z" duration-ms="36901">
+    <groups>
+      <group name="RegressionSuite">
+        <method signature="apiTestScript.validateResponseBodyPojoPost()[pri:0, instance:api.com.tests.apiTestScript@291caca8]" name="validateResponseBodyPojoPost" class="api.com.tests.apiTestScript"/>
+      </group> <!-- RegressionSuite -->
+      <group name="SmokeSuite">
+        <method signature="apiTestScript.validateResponseBodyPojoPost()[pri:0, instance:api.com.tests.apiTestScript@291caca8]" name="validateResponseBodyPojoPost" class="api.com.tests.apiTestScript"/>
+      </group> <!-- SmokeSuite -->
+    </groups>
+    <test started-at="2022-02-13T14:31:48Z" name="API TestCases" finished-at="2022-02-13T14:32:25Z" duration-ms="36901">
+      <class name="api.com.tests.apiTestScript">
+        <test-method is-config="true" signature="config(java.lang.String, java.lang.String)[pri:0, instance:api.com.tests.apiTestScript@291caca8]" started-at="2022-02-13T20:01:43Z" name="config" finished-at="2022-02-13T20:01:48Z" duration-ms="4883" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Optional name Automation ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[API Report]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config -->
+        <test-method is-config="true" signature="LogBeforeMethod()[pri:0, instance:api.com.tests.apiTestScript@291caca8]" started-at="2022-02-13T20:01:48Z" name="LogBeforeMethod" finished-at="2022-02-13T20:01:48Z" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogBeforeMethod -->
+        <test-method signature="validateResponseBodyPojoPost()[pri:0, instance:api.com.tests.apiTestScript@291caca8]" started-at="2022-02-13T20:01:48Z" name="validateResponseBodyPojoPost" description="Validate the status code for GET users endpoint" finished-at="2022-02-13T20:02:18Z" duration-ms="30471" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [200] but found [201]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [200] but found [201]at org.testng.Assert.fail(Assert.java:96)at org.testng.Assert.failNotEquals(Assert.java:776)at org.testng.Assert.assertEqualsImpl(Assert.java:137)at org.testng.Assert.assertEquals(Assert.java:118)at org.testng.Assert.assertEquals(Assert.java:652)at org.testng.Assert.assertEquals(Assert.java:662)at api.com.tests.apiTestScript.validateResponseBodyPojoPost(apiTestScript.java:193)at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.base/java.lang.reflect.Method.invoke(Method.java:566)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateResponseBodyPojoPost -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.com.tests.apiTestScript@291caca8]" started-at="2022-02-13T20:02:18Z" name="getResult" finished-at="2022-02-13T20:02:19Z" duration-ms="226" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateResponseBodyPojoPost status=SKIP method=apiTestScript.validateResponseBodyPojoPost()[pri:0, instance:api.com.tests.apiTestScript@291caca8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="LogBeforeMethod()[pri:0, instance:api.com.tests.apiTestScript@291caca8]" started-at="2022-02-13T20:02:19Z" name="LogBeforeMethod" finished-at="2022-02-13T20:02:19Z" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogBeforeMethod -->
+        <test-method signature="validateResponseBodyPojoPost()[pri:0, instance:api.com.tests.apiTestScript@291caca8]" started-at="2022-02-13T20:02:19Z" name="validateResponseBodyPojoPost" description="Validate the status code for GET users endpoint" finished-at="2022-02-13T20:02:20Z" duration-ms="1537" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [200] but found [201]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [200] but found [201]at org.testng.Assert.fail(Assert.java:96)at org.testng.Assert.failNotEquals(Assert.java:776)at org.testng.Assert.assertEqualsImpl(Assert.java:137)at org.testng.Assert.assertEquals(Assert.java:118)at org.testng.Assert.assertEquals(Assert.java:652)at org.testng.Assert.assertEquals(Assert.java:662)at api.com.tests.apiTestScript.validateResponseBodyPojoPost(apiTestScript.java:193)at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.base/java.lang.reflect.Method.invoke(Method.java:566)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.retryFailed(Invoker.java:829)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1000)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateResponseBodyPojoPost -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.com.tests.apiTestScript@291caca8]" started-at="2022-02-13T20:02:20Z" name="getResult" finished-at="2022-02-13T20:02:20Z" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateResponseBodyPojoPost status=SKIP method=apiTestScript.validateResponseBodyPojoPost()[pri:0, instance:api.com.tests.apiTestScript@291caca8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="LogBeforeMethod()[pri:0, instance:api.com.tests.apiTestScript@291caca8]" started-at="2022-02-13T20:02:20Z" name="LogBeforeMethod" finished-at="2022-02-13T20:02:20Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogBeforeMethod -->
+        <test-method signature="validateResponseBodyPojoPost()[pri:0, instance:api.com.tests.apiTestScript@291caca8]" started-at="2022-02-13T20:02:20Z" name="validateResponseBodyPojoPost" description="Validate the status code for GET users endpoint" finished-at="2022-02-13T20:02:21Z" duration-ms="1391" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [200] but found [201]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [200] but found [201]at org.testng.Assert.fail(Assert.java:96)at org.testng.Assert.failNotEquals(Assert.java:776)at org.testng.Assert.assertEqualsImpl(Assert.java:137)at org.testng.Assert.assertEquals(Assert.java:118)at org.testng.Assert.assertEquals(Assert.java:652)at org.testng.Assert.assertEquals(Assert.java:662)at api.com.tests.apiTestScript.validateResponseBodyPojoPost(apiTestScript.java:193)at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.base/java.lang.reflect.Method.invoke(Method.java:566)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.retryFailed(Invoker.java:829)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1000)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateResponseBodyPojoPost -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.com.tests.apiTestScript@291caca8]" started-at="2022-02-13T20:02:22Z" name="getResult" finished-at="2022-02-13T20:02:22Z" duration-ms="11" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateResponseBodyPojoPost status=SKIP method=apiTestScript.validateResponseBodyPojoPost()[pri:0, instance:api.com.tests.apiTestScript@291caca8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="LogBeforeMethod()[pri:0, instance:api.com.tests.apiTestScript@291caca8]" started-at="2022-02-13T20:02:22Z" name="LogBeforeMethod" finished-at="2022-02-13T20:02:22Z" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogBeforeMethod -->
+        <test-method signature="validateResponseBodyPojoPost()[pri:0, instance:api.com.tests.apiTestScript@291caca8]" started-at="2022-02-13T20:02:22Z" name="validateResponseBodyPojoPost" description="Validate the status code for GET users endpoint" finished-at="2022-02-13T20:02:23Z" duration-ms="1105" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [200] but found [201]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [200] but found [201]at org.testng.Assert.fail(Assert.java:96)at org.testng.Assert.failNotEquals(Assert.java:776)at org.testng.Assert.assertEqualsImpl(Assert.java:137)at org.testng.Assert.assertEquals(Assert.java:118)at org.testng.Assert.assertEquals(Assert.java:652)at org.testng.Assert.assertEquals(Assert.java:662)at api.com.tests.apiTestScript.validateResponseBodyPojoPost(apiTestScript.java:193)at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.base/java.lang.reflect.Method.invoke(Method.java:566)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.retryFailed(Invoker.java:829)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1000)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateResponseBodyPojoPost -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.com.tests.apiTestScript@291caca8]" started-at="2022-02-13T20:02:23Z" name="getResult" finished-at="2022-02-13T20:02:23Z" duration-ms="8" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateResponseBodyPojoPost status=SKIP method=apiTestScript.validateResponseBodyPojoPost()[pri:0, instance:api.com.tests.apiTestScript@291caca8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="LogBeforeMethod()[pri:0, instance:api.com.tests.apiTestScript@291caca8]" started-at="2022-02-13T20:02:23Z" name="LogBeforeMethod" finished-at="2022-02-13T20:02:23Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogBeforeMethod -->
+        <test-method signature="validateResponseBodyPojoPost()[pri:0, instance:api.com.tests.apiTestScript@291caca8]" started-at="2022-02-13T20:02:23Z" name="validateResponseBodyPojoPost" description="Validate the status code for GET users endpoint" finished-at="2022-02-13T20:02:24Z" duration-ms="1019" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [200] but found [201]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [200] but found [201]at org.testng.Assert.fail(Assert.java:96)at org.testng.Assert.failNotEquals(Assert.java:776)at org.testng.Assert.assertEqualsImpl(Assert.java:137)at org.testng.Assert.assertEquals(Assert.java:118)at org.testng.Assert.assertEquals(Assert.java:652)at org.testng.Assert.assertEquals(Assert.java:662)at api.com.tests.apiTestScript.validateResponseBodyPojoPost(apiTestScript.java:193)at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.base/java.lang.reflect.Method.invoke(Method.java:566)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.retryFailed(Invoker.java:829)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1000)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateResponseBodyPojoPost -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.com.tests.apiTestScript@291caca8]" started-at="2022-02-13T20:02:24Z" name="getResult" finished-at="2022-02-13T20:02:24Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateResponseBodyPojoPost status=SKIP method=apiTestScript.validateResponseBodyPojoPost()[pri:0, instance:api.com.tests.apiTestScript@291caca8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="validateResponseBodyPojoPost()[pri:0, instance:api.com.tests.apiTestScript@291caca8]" started-at="2022-02-13T20:02:24Z" name="validateResponseBodyPojoPost" description="Validate the status code for GET users endpoint" finished-at="2022-02-13T20:02:25Z" duration-ms="873" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [200] but found [201]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [200] but found [201]at org.testng.Assert.fail(Assert.java:96)at org.testng.Assert.failNotEquals(Assert.java:776)at org.testng.Assert.assertEqualsImpl(Assert.java:137)at org.testng.Assert.assertEquals(Assert.java:118)at org.testng.Assert.assertEquals(Assert.java:652)at org.testng.Assert.assertEquals(Assert.java:662)at api.com.tests.apiTestScript.validateResponseBodyPojoPost(apiTestScript.java:193)at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.base/java.lang.reflect.Method.invoke(Method.java:566)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.retryFailed(Invoker.java:829)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1000)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateResponseBodyPojoPost -->
+        <test-method is-config="true" signature="LogBeforeMethod()[pri:0, instance:api.com.tests.apiTestScript@291caca8]" started-at="2022-02-13T20:02:24Z" name="LogBeforeMethod" finished-at="2022-02-13T20:02:24Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogBeforeMethod -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.com.tests.apiTestScript@291caca8]" started-at="2022-02-13T20:02:25Z" name="getResult" finished-at="2022-02-13T20:02:25Z" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateResponseBodyPojoPost status=FAILURE method=apiTestScript.validateResponseBodyPojoPost()[pri:0, instance:api.com.tests.apiTestScript@291caca8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="endReport()[pri:0, instance:api.com.tests.apiTestScript@291caca8]" started-at="2022-02-13T20:02:25Z" name="endReport" finished-at="2022-02-13T20:02:29Z" duration-ms="4316" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- api.com.tests.apiTestScript -->
+    </test> <!-- API TestCases -->
+  </suite> <!-- Automation Regression Suite -->
+</testng-results>
