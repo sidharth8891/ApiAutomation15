@@ -167,19 +167,19 @@ public class apiTestScript extends BaseTest {
 //	 
 //	}
 //	
-//	@Test(description="Validate the status code for GET users endpoint")
-//	public void validateResponseBodyGetOauth2WithHeader() {	
-//		
-//		  Response resp = given()
-//				  			.header("Authorization", accessToken)
-//	                		.when()
-//	                		.get("https://reqres.in/api/users/2");
-//	
-//	int actualStatusCode = resp.statusCode();  //RestAssured
-//	assertEquals(actualStatusCode, 200); //Testng
-//	System.out.println(resp.body().asString());
-//	 
-//	}
+	@Test(description="Validate the status code for GET users endpoint")
+	public void validateResponseBodyGetOauth2WithHeader() {	
+		
+		  Response resp = given()
+				  			.header("Authorization", accessToken)
+	                		.when()
+	                		.get("https://reqres.in/api/users/2");
+	
+	int actualStatusCode = resp.statusCode();  //RestAssured
+	assertEquals(actualStatusCode, 200); //Testng
+	System.out.println(resp.body().asString());
+	 
+	}
 	
 	@Test(description="Validate the status code for GET users endpoint", enabled=true, groups={"SmokeSuite","RegressionSuite"})
 	public void validateResponseBodyPojoPost() throws IOException {	
