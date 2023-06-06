@@ -1,41 +1,34 @@
-package api.com.tests;
+package apitests;
 
 import static io.restassured.RestAssured.given;
 import static org.testng.Assert.assertEquals;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
 
+import api.util.ReadTestData;
 import org.apache.commons.io.IOUtils;
 import org.json.simple.parser.ParseException;
 import org.testng.annotations.Test;
 
-import api.com.util.RandomUtils;
-import api.com.core.BaseTest;
-import api.com.pojo.cityModel;
-import api.com.pojo.pojoComplex;
-import api.com.pojo.postPojo;
-import api.com.util.DataGeneration;
-import api.com.util.ExtentReport;
-import api.com.util.Helper;
-import api.com.util.ReadTestData;
+import api.core.BaseTest;
+import api.pojo.postPojo;
+import api.util.DataGeneration;
+import api.util.ExtentReport;
+import api.util.Helper;
 import io.restassured.response.Response;
 
 public class apiTestScript extends BaseTest {
-	
-	private String accessToken;
-	DataGeneration datageneration = new DataGeneration();
-	private String name = datageneration.genarateString(6);
-	private String job = datageneration.genarateString(7);
 
-			
+    private String accessToken;
+    DataGeneration datageneration = new DataGeneration();
+    private String name = datageneration.genarateString(6);
+    private String job = datageneration.genarateString(7);
+
+
 //@TestNG
-	
+
 //	@Test(description="Validate the status code for GET users endpoint")
 //	public void validateStatusCodeGetUsers() throws IOException, ParseException {	
 //		
@@ -180,19 +173,18 @@ public class apiTestScript extends BaseTest {
 //	System.out.println(resp.body().asString());
 //	 
 //	}
-	
-	@Test(description="Validate the status code for GET users endpoint", enabled=true, groups={"SmokeSuite","RegressionSuite"})
-	public void validateResponseBodyPojoPost() throws IOException {	
-		ExtentReport.extentlog = ExtentReport.extentreport.startTest("validateResponseBodyPojoPost",
-				"Validate the status code for GET users endpoint");
-		  Response resp = given()
-				  			.body(IOUtils.toString(new FileInputStream(new File(System.getProperty("user.dir")+"/Resources/TestData/postRequestBody.json"))))
-				  			.header("Content-type", "application/json")
-	                		.when()
-	                		.post("https://reqres.in/api/users");
-	//assertEquals(resp.statusCode(), 200); //Testng 
-		assertEquals(resp.statusCode(), 201); //Testng   
-	}
+
+    @Test(description = "Validate the status code for GET users endpoint", enabled = true, groups = {"SmokeSuite", "RegressionSuite"})
+    public void validateResponseBodyPojoPost() throws IOException {
+        ExtentReport.extentlog = ExtentReport.extentreport.startTest("validateResponseBodyPojoPost",
+                "Validate the status code for GET users endpoint");
+        Response resp = given()
+                .body(IOUtils.toString(new FileInputStream(new File(System.getProperty("user.dir") + "/Resources/TestData/postRequestBody.json"))))
+                .header("Content-type", "application/json")
+                .when()
+                .post("https://reqres.in/api/users");
+        assertEquals(resp.statusCode(), 201); //Testng
+    }
 
 
 //	@Test(description="Validate the status code for GET users endpoint", groups="RegressionSuite")
@@ -262,16 +254,16 @@ public class apiTestScript extends BaseTest {
 //	}
 
 
-  private static String getUri() throws IOException, ParseException {
-		String uri = Helper.propertyReader("qaBaseUrl")  + ReadTestData.getTestData("endpointGetUsers") ;
-		return uri;
-  }
-  
-  private postPojo pojo() {
-	  postPojo pojo = new postPojo();
-	  pojo.setName(name);
-	  pojo.setJob(job);
-	  return pojo;
-  }
+    private static String getUri() throws IOException, ParseException {
+        String uri = Helper.propertyReader("qaBaseUrl") + ReadTestData.getTestData("endpointGetUsers");
+        return uri;
+    }
+
+    private postPojo pojo() {
+        postPojo pojo = new postPojo();
+        pojo.setName(name);
+        pojo.setJob(job);
+        return pojo;
+    }
 
 }

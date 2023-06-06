@@ -1,5 +1,6 @@
 {
-    "uriGetUsers":"https://reqres.in/api/users?page=2",
-    "expectedEmail": "lindsay.ferguson@reqres.in",
-    "endpointGetUsers": "/api/users"
+  "uriGetUsers": "https://reqres.in/api/users?page=2",
+  "expectedEmail": "lindsay.ferguson@reqres.in",
+  "endpointGetUsers": "/api/users",
+  "supportURL": "https://reqres.in/#support-heading"
 }

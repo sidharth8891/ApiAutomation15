@@ -1,4 +1,4 @@
-package api.com.util;
+package api.util;
 
 
 import java.io.File;
@@ -25,30 +25,30 @@ import com.google.gson.stream.JsonReader;
 
 public class ReadTestData {
 
-	//private final static String filePath = "TestData//testdata.json";
+    //private final static String filePath = "TestData//testdata.json";
 
-	public static JSONObject getJsonData() throws IOException, ParseException  {
-		
-		//pass the path of the testdata.json file
-		File filename = new File("Resources/TestData/testdatas.json");
-		//convert json file into string
-		String json = FileUtils.readFileToString(filename,"UTF-8");
-		//parse the string into object
-		Object obj = new JSONParser().parse(json);
+    public static JSONObject getJsonData() throws IOException, ParseException {
+
+        //pass the path of the testdata.json file
+        File filename = new File("Resources/TestData/testdatas.json");
+        //convert json file into string
+        String json = FileUtils.readFileToString(filename, "UTF-8");
+        //parse the string into object
+        Object obj = new JSONParser().parse(json);
         //give jsonobject  that I can return it to the function everytime it get called
-		JSONObject jsonObject = (JSONObject) obj;
-		return jsonObject;
+        JSONObject jsonObject = (JSONObject) obj;
+        return jsonObject;
 
-	}
-	
-	
-	public static String getTestData(String keyname) throws IOException, ParseException {
-		String testdata;
-	//	return  testdata = JsonUtil.getData().get(input).toString();
-		return testdata = (String) getJsonData().get(keyname);
-	}
-	
-	
+    }
+
+
+    public static String getTestData(String keyname) throws IOException, ParseException {
+        String testdata;
+        //	return  testdata = JsonUtil.getData().get(input).toString();
+        return testdata = (String) getJsonData().get(keyname);
+    }
+
+
 //	public static String getdatafromjson(String path) throws IOException {
 //		
 ////		File f = new File("Resources//TestData//testdata.json");

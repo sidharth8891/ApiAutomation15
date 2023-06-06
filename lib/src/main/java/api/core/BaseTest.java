@@ -1,4 +1,4 @@
-package api.com.core;
+package api.core;
 
 
 import java.io.IOException;
@@ -12,8 +12,8 @@ import org.testng.annotations.Parameters;
 
 import com.relevantcodes.extentreports.LogStatus;
 
-import api.com.util.ExtentReport;
-import api.com.util.Helper;
+import api.util.ExtentReport;
+import api.util.Helper;
 
 public class BaseTest {
 	
